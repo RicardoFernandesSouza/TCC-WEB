@@ -33,9 +33,8 @@
 	<tr>
 		<th>ID</th>
 		<th width="30%">Nome</th>
-		<th>CPF/CNPJ</th>
-		<th>Telefone</th>
-		<th>Atualizado em</th>
+		<th>Celular</th>
+		<th>E-mail</th>
 		<th>Opções</th>
 	</tr>
 </thead>
@@ -45,13 +44,12 @@
 	<tr>
 		<td><?php echo $resp['id']; ?></td>
 		<td><?php echo $resp['name']; ?></td>
-		<td><?php echo $resp['cpf_cnpj']; ?></td>
-		<td>00 0000-0000</td>
-		<td><?php echo $resp['modified']; ?></td>
+		<td><?php echo $resp['mobile']; ?></td>
+		<td><?php echo $resp['email']; ?></td>
 		<td class="actions text-right">
 			<a href="view.php?id=<?php echo $resp['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
 			<a href="edit.php?id=<?php echo $resp['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
-			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-resp="<?php 
+			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal-resp" data-resp="<?php 
 			echo $resp['id']; ?>">
 				<i class="fa fa-trash"></i> Excluir
 			</a>

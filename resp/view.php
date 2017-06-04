@@ -17,40 +17,24 @@
 	<dd><?php echo $resp['name']; ?></dd>
 	<dt>CPF / CNPJ:</dt>
 	<dd><?php echo $resp['cpf_cnpj']; ?></dd>
-
-	<dt>Data de Nascimento:</dt>
-	<dd><?php echo $resp['birthdate']; ?></dd>
 </dl>
 
 <dl class="dl-horizontal">
-	<dt>Endereço:</dt>
-	<dd><?php echo $resp['address']; ?></dd>
-
-	<dt>Bairro:</dt>
-	<dd><?php echo $resp['hood']; ?></dd>
-
-	<dt>CEP:</dt>
-	<dd><?php echo $resp['zip_code']; ?></dd>
-
-	<dt>Data de Cadastro:</dt>
-	<dd><?php echo $resp['created']; ?></dd>
-</dl>
-
-<dl class="dl-horizontal">
-	<dt>Cidade:</dt>
-	<dd><?php echo $resp['city']; ?></dd>
-
-	<dt>Telefone:</dt>
-	<dd><?php echo $resp['phone']; ?></dd>
+	<dt>Email :</dt>
+	<dd><?php echo $resp['email']; ?></dd>
 
 	<dt>Celular:</dt>
 	<dd><?php echo $resp['mobile']; ?></dd>
 
-	<dt>UF:</dt>
-	<dd><?php echo $resp['state']; ?></dd>
+</dl>
 
-	<dt>Inscrição Estadual:</dt>
-	<dd><?php echo $resp['ie']; ?></dd>
+<dl class="dl-horizontal">
+	<dt>Nome Usuário:</dt>
+	<dd><?php echo $resp['username']; ?></dd>
+
+	<dt>Senha :</dt>
+	<dd><?php echo $resp['password']; ?></dd>
+
 </dl>
 
 <div id="actions" class="row">

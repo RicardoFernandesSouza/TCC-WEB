@@ -66,7 +66,6 @@
     <div class="form-group col-md-3">
       <label for="campo9">Cliente</label>
       <input type="text" class="form-control" name="residencia['idcliente']">
-
     </div>
 
     <div class="form-group col-md-3">

@@ -20,7 +20,6 @@ function add() {
     $today = 
       date_create('now', new DateTimeZone('America/Sao_Paulo'));
     $resp = $_POST['resp'];
-    $resp['modified'] = $resp['created'] = $today->format("Y-m-d H:i:s");
     
     save('resp', $resp);
     header('location: index.php');
@@ -36,7 +35,6 @@ function edit() {
     $id = $_GET['id'];
     if (isset($_POST['resp'])) {
       $resp = $_POST['resp'];
-      $resp['modified'] = $now->format("Y-m-d H:i:s");
       update('resp', $id, $resp);
       header('location: index.php');
     } else {
@@ -57,7 +55,6 @@ function viewresp() {
     $id = $_GET['id'];
     if (isset($_POST['resp'])) {
       $resp = $_POST['resp'];
-      $resp['modified'] = $now->format("Y-m-d H:i:s");
       update('resp', $id, $resp);
       header('location: index.php');
     } else {

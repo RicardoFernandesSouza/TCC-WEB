@@ -48,8 +48,58 @@
 	<dt>Responsável:</dt>
 	<dd><?php echo $residencia['idresp']; ?></dd>
 </dl>
+ <dt>Etapas Cliente:</dt>
+<dd> <?php
+      $conn =   mysqli_connect("localhost", "root", "", "tohomecrud");  
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+$id_resi = $_GET['id'];
+$sql = "SELECT id, name, details FROM tbl_name where id_residencia like 0";
+$result = $conn->query($sql);
 
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "" . $row["name"]. " " . $row["details"]. "<br>"; 
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
 
+            
+ 
+
+ ?> </dd>
+<BR><BR>
+<dt>Etapas Responsável:</dt>
+ <dd> <?php
+      $conn =   mysqli_connect("localhost", "root", "", "tohomecrud");  
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+$id_resi = $_GET['id'];
+$sql = "SELECT id, name, details FROM tbl_name1 where id_residencia like 0";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "" . $row["name"]. " " . $row["details"]. "<br>"; 
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+
+            
+ 
+
+ ?> </dd>
+<BR><BR>
 
 <div id="actions" class="row">
 	<div class="col-md-12">

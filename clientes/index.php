@@ -32,10 +32,9 @@
 	<tr>
 		<th>ID</th>
 		<th width="30%">Nome</th>
-		<th>CPF/CNPJ</th>
+		<th>E-mail</th>
 		<th>Telefone</th>
-		<th>Atualizado em</th>
-		<th>Opções</th>
+		
 	</tr>
 </thead>
 <tbody>
@@ -44,9 +43,8 @@
 	<tr>
 		<td><?php echo $cliente['id']; ?></td>
 		<td><?php echo $cliente['name']; ?></td>
-		<td><?php echo $cliente['cpf_cnpj']; ?></td>
-		<td>00 0000-0000</td>
-		<td><?php echo $cliente['modified']; ?></td>
+		<td><?php echo $cliente['email']; ?></td>
+		<td><?php echo $cliente['mobile']; ?></td>
 		<td class="actions text-right">
 			<a href="view.php?id=<?php echo $cliente['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
 			<a href="edit.php?id=<?php echo $cliente['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>

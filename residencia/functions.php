@@ -23,13 +23,13 @@ function add() {
     $residencia['modified'] = $residencia['created'] = $today->format("Y-m-d H:i:s");
     
     save('residencia', $residencia);
-    header('location: add_etapa_cliente.php');
+    header('location: index.php');
   }
 }
 
 
 function passaID(){
-   $now = date_create('now', new DateTimeZone('America/Sao_Paulo'));
+  $now = date_create('now', new DateTimeZone('America/Sao_Paulo'));
   if (isset($_GET['id'])) {
     $id = $_GET['id'];
     if (isset($_POST['residencia'])) {
@@ -41,6 +41,8 @@ function passaID(){
       global $residencia;
       $residencia = find('residencia', $id);
     } 
+  } else {
+    header('location: index.php');
   }
 }
 

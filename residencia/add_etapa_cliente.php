@@ -1,6 +1,6 @@
 <?php 
   require_once('functions.php'); 
-  add();
+    view($_GET['id']);
 ?>
 
 <?php include(HEADER_TEMPLATE); ?>
@@ -18,6 +18,7 @@
                 <br />  
                 <br />  
                 <h2 align="center">Etapas do Cliente</h2>  
+                <h2>residencia <?php echo $residencia['id']; ?></h2>
                 <div class="form-group">  
                      <form name="add_name" id="add_name">  
                           <div class="table-responsive">  
@@ -34,9 +35,7 @@
                            
                      </form> 
                      <BR><BR>
-                     <form action="add_etapa_resp.php">
-                           <a href="add_etapa_resp.php" class="btn btn-info">Etapas Responável</a>
-                     </form>
+                      <a href="add_etapa_resp.php?id=<?php echo $residencia['id']; ?>" class="btn btn-primary"><i class="fa fa-plus"></i> Cadastrar Etapas Responsável</a>
                 </div>  
            </div>  
       </body>  

@@ -49,9 +49,10 @@
 		<td>00 0000-0000</td>
 		<td><?php echo $residencia['modified']; ?></td>
 		<td class="actions text-right">
+		<a href="add_etapa_cliente.php?id=<?php echo $residencia['id']; ?>" class="btn btn-primary"><i class="fa fa-plus"></i> Cadastrar Etapas</a>
 			<a href="view.php?id=<?php echo $residencia['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
 			<a href="edit.php?id=<?php echo $residencia['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
-			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-residencia="<?php echo $residencia['id']; ?>">
+			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal-resi" data-residencia="<?php echo $residencia['id']; ?>">
 				<i class="fa fa-trash"></i> Excluir
 			</a>
 		</td>

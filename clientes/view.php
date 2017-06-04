@@ -19,39 +19,24 @@
 	<dt>CPF / CNPJ:</dt>
 	<dd><?php echo $cliente['cpf_cnpj']; ?></dd>
 
-	<dt>Data de Nascimento:</dt>
-	<dd><?php echo $cliente['birthdate']; ?></dd>
 </dl>
 
 <dl class="dl-horizontal">
-	<dt>Endereço:</dt>
-	<dd><?php echo $cliente['address']; ?></dd>
-
-	<dt>Bairro:</dt>
-	<dd><?php echo $cliente['hood']; ?></dd>
-
-	<dt>CEP:</dt>
-	<dd><?php echo $cliente['zip_code']; ?></dd>
-
-	<dt>Data de Cadastro:</dt>
-	<dd><?php echo $cliente['created']; ?></dd>
-</dl>
-
-<dl class="dl-horizontal">
-	<dt>Cidade:</dt>
-	<dd><?php echo $cliente['city']; ?></dd>
-
-	<dt>Telefone:</dt>
-	<dd><?php echo $cliente['phone']; ?></dd>
+	<dt>Email :</dt>
+	<dd><?php echo $cliente['email']; ?></dd>
 
 	<dt>Celular:</dt>
 	<dd><?php echo $cliente['mobile']; ?></dd>
 
-	<dt>UF:</dt>
-	<dd><?php echo $cliente['state']; ?></dd>
+</dl>
 
-	<dt>Inscrição Estadual:</dt>
-	<dd><?php echo $cliente['ie']; ?></dd>
+<dl class="dl-horizontal">
+	<dt>Nome Usuário:</dt>
+	<dd><?php echo $cliente['username']; ?></dd>
+
+	<dt>Senha :</dt>
+	<dd><?php echo $cliente['password']; ?></dd>
+
 </dl>
 
 <div id="actions" class="row">

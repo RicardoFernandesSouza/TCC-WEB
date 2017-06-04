@@ -20,7 +20,6 @@ function add() {
     $today = 
       date_create('now', new DateTimeZone('America/Sao_Paulo'));
     $cliente = $_POST['cliente'];
-    $cliente['modified'] = $cliente['created'] = $today->format("Y-m-d H:i:s");
     
     save('cliente', $cliente);
     header('location: index.php');
@@ -36,7 +35,6 @@ function edit() {
     $id = $_GET['id'];
     if (isset($_POST['cliente'])) {
       $cliente = $_POST['cliente'];
-      $cliente['modified'] = $now->format("Y-m-d H:i:s");
       update('cliente', $id, $cliente);
       header('location: index.php');
     } else {
@@ -77,3 +75,4 @@ function delete($id = null) {
   $cliente = remove('clientes', $id);
   header('location: index.php');
 }
+

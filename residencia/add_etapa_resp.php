@@ -1,6 +1,6 @@
 <?php 
   require_once('functions.php'); 
-  add();
+  view($_GET['id']);
 ?>
 
 <?php include(HEADER_TEMPLATE); ?>
@@ -17,6 +17,7 @@
                 <br />  
                 <br />  
                 <h2 align="center">Etapas do Responsável</h2>  
+                <h2>residencia <?php echo $residencia['id']; ?></h2>
 
                 <div class="form-group">  
                      <form name="add_name" id="add_name">  
