@@ -11,5 +11,9 @@
     <script src="<?php echo BASEURL; ?>js/bootstrap.min.js"></script>
 
     <script src="<?php echo BASEURL; ?>js/main.js"></script>
+    <script src="<?php echo BASEURL; ?>js/main_resp.js"></script>
+    <script src="<?php echo BASEURL; ?>js/main_resi.js"></script>
+
+
 </body>
 </html>

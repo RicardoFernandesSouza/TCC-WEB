@@ -56,7 +56,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 $id_resi = $_GET['id'];
-$sql = "SELECT id, name, details FROM tbl_name where id_residencia like 0";
+$sql = "SELECT id, name, details FROM tbl_name where id_residencia like '".mysqli_real_escape_string($conn, $_GET["id"])."'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -82,7 +82,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 $id_resi = $_GET['id'];
-$sql = "SELECT id, name, details FROM tbl_name1 where id_residencia like 0";
+$sql = "SELECT id, name, details FROM tbl_name1 where id_residencia like '".mysqli_real_escape_string($conn, $_GET["id"])."'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

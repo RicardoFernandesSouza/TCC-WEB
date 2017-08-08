@@ -7,8 +7,9 @@
       {  
            if(trim($_POST["name"][$i] != ''))  
            {  
-                $sql = "INSERT INTO tbl_name1(name,details) VALUES('".mysqli_real_escape_string($connect, $_POST["name"][$i])."','".mysqli_real_escape_string($connect, $_POST["details"][$i])."')";  
-                mysqli_query($connect, $sql);
+                $sql = "INSERT INTO tbl_name1(name,details,id_residencia) VALUES('".mysqli_real_escape_string($connect, $_POST["name"][$i])."','".mysqli_real_escape_string($connect, $_POST["details"][$i])."','".mysqli_real_escape_string($connect, $_POST["id_residencia"][$i])."')";
+                   mysqli_query($connect, $sql);
+
               //  $sql = " UPDATE tbl_name1 SET details = ('".mysqli_real_escape_string($connect, $_POST["details"][$i])."')
                 //          WHERE name = ('".mysqli_real_escape_string($connect, $_POST["name"][$i])."')";  
                 //mysqli_query($connect, $sql);    

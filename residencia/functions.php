@@ -57,6 +57,7 @@ function edit() {
       $residencia = $_POST['residencia'];
       $residencia['modified'] = $now->format("Y-m-d H:i:s");
       update('residencia', $id, $residencia);
+      update('tbl_name', $id, $residencia);
       header('location: index.php');
     } else {
       global $residencia;
@@ -93,7 +94,7 @@ function view($id = null) {
  */
 function delete($id = null) {
   global $residencia;
-  $residencia = remove('residencias', $id);
+  $residencia = remove('residencia', $id);
   header('location: index.php');
 }
 

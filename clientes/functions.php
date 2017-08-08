@@ -72,7 +72,7 @@ function view($id = null) {
  */
 function delete($id = null) {
   global $cliente;
-  $cliente = remove('clientes', $id);
+  $cliente = remove('cliente', $id);
   header('location: index.php');
 }
 

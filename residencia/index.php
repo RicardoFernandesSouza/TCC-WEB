@@ -34,8 +34,8 @@
 		<th width="30%">Rua</th>
 		<th>Cliente</th>
 		<th>Responsável</th>
-		<th>Atualizado em</th>
-		<th>Opções</th>
+		<th width="30%">Opções</th>
+		
 	</tr>
 </thead>
 <tbody>
@@ -46,8 +46,6 @@
 		<td><?php echo $residencia['address']; ?></td>
 		<td><?php echo $residencia['idcliente']; ?></td>
 		<td><?php echo $residencia['idresp']; ?></td>
-		<td>00 0000-0000</td>
-		<td><?php echo $residencia['modified']; ?></td>
 		<td class="actions text-right">
 		<a href="add_etapa_cliente.php?id=<?php echo $residencia['id']; ?>" class="btn btn-primary"><i class="fa fa-plus"></i> Cadastrar Etapas</a>
 			<a href="view.php?id=<?php echo $residencia['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>

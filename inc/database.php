@@ -120,6 +120,8 @@ function update($table = null, $id = 0, $data = null) {
   close_database($database);
 }
 
+
+
 /**
  *  Remove uma linha de uma tabela pelo ID do registro
  */

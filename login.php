@@ -47,7 +47,6 @@ session_start();
         <input type="password" name="pwd" class="form-control" placeholder="Senha" required>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="remember-me"> Lembrar-me
           </label>
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>

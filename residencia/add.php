@@ -1,4 +1,4 @@
-<?php 
+\\\\<?php 
   require_once('functions.php'); 
   add();
 ?>
@@ -51,13 +51,13 @@
   <hr />
     <div class="form-group col-md-3">
       <label for="campo7">Data Início</label>
-      <input type="text" class="form-control" name="residencia['begindate']">
+      <input type="date" class="form-control" name="residencia['begindate']">
     </div>
   </div>
 
     <div class="form-group col-md-3">
       <label for="campo8">Data Fim</label>
-      <input type="text" class="form-control" name="residencia['enddate']">
+      <input type="date" class="form-control" name="residencia['enddate']">
     </div>
   <hr />
 <br><br>
