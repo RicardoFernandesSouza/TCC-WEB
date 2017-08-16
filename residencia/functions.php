@@ -57,7 +57,6 @@ function edit() {
       $residencia = $_POST['residencia'];
       $residencia['modified'] = $now->format("Y-m-d H:i:s");
       update('residencia', $id, $residencia);
-      update('tbl_name', $id, $residencia);
       header('location: index.php');
     } else {
       global $residencia;
@@ -67,6 +66,7 @@ function edit() {
     header('location: index.php');
   }
 }
+
 
 /**
  *  Visualização de um residencia

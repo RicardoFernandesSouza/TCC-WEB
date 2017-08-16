@@ -73,58 +73,22 @@
       <label for="campo2">Responsável</label>
       <input type="text" class="form-control" name="residencia['idresp']" value="<?php echo $residencia['idresp']; ?>">
     </div>
-
   </div>
+<BR><BR>
 
-<div class="col-md-12">
-  <dt>Etapas Cliente:</dt>
-<dd> <?php
-      $conn =   mysqli_connect("localhost", "root", "", "tohomecrud");  
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-$id_resi = $_GET['id'];
-$sql = "SELECT name, details FROM tbl_name where id_residencia like '".mysqli_real_escape_string($conn, $_GET["id"])."'";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-          //  echo "" . $row["name"]. " " . $row["details"]. "<br>"; 
-           ?> 
-
-<div class="table-responsive">  
-      <table class="table table-bordered" id="dynamic_field">  
-      <tr>  
-
-    <td><input type="text" name="tbl_name['name']" value="<?php echo $row['name']; ?>" class="form-control name_list" /></td> 
-    <td><input type="text" name="tbl_name['details']" value="<?php echo $row['details']; ?>" class="form-control name_list" /></td> 
-
-                                        
-    </tr>  
-        </table> 
-
-    <?php
-            
-
-    }
-} else {
-    echo "0 results";
-}
-//$conn->close();
-
- ?> </dd>
-
- </div>
-
+   <div class="form-group col-md-12">
+      <a href="editEtapaCliente.php?id=<?php echo $residencia['id']; ?>" class="btn btn-info"> Etapas  Cliente <i class="fa fa-pencil"></i></a>
+      <a href="editEtapaResp.php?id=<?php echo $residencia['id']; ?>" class="btn btn-info"> Etapas  Responsável <i class="fa fa-pencil"></i></a>
+    </div>
+  </div>
   <div id="actions" class="row">
     <div class="col-md-12">
       <button type="submit" class="btn btn-primary">Salvar</button>
       <a href="index.php" class="btn btn-default">Cancelar</a>
     </div>
   </div>
+<BR><BR>
+   
 </form>
 
 <?php include(FOOTER_TEMPLATE); ?>
-
