@@ -30,8 +30,4 @@ if($input["action"] === 'delete')
 
 echo json_encode($input);
 
-<<<<<<< HEAD
 ?>
-=======
-?>
->>>>>>> origin/master

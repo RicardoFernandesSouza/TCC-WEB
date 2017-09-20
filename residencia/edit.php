@@ -91,7 +91,6 @@
       </body>
   </html>
     </div>
-<<<<<<< HEAD
 
   <?php
   $hostname = "localhost";
@@ -120,9 +119,6 @@
       </body>
   </html>    </div>
         </div>
-=======
-  </div>
->>>>>>> origin/master
 <BR><BR>
 
    <div class="form-group col-md-12">

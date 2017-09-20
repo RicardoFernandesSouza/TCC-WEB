@@ -4,27 +4,15 @@
 ?>
 
 <?php include(HEADER_TEMPLATE); ?>
-<<<<<<< HEAD
 <h2>Atualizar Residência</h2>
 
-=======
-
-<h2>Atualizar Residência</h2>
->>>>>>> origin/master
 <?php
 $connect = mysqli_connect("localhost", "root", "", "tohomecrud");
 $query = "SELECT * FROM tbl_name where id_residencia like '".mysqli_real_escape_string($connect, $_GET["id"])."'";
 $result = mysqli_query($connect, $query);
 ?>
-<<<<<<< HEAD
 <html>  
  <head>  
-=======
-
-<html>  
- <head> 
-
->>>>>>> origin/master
           <title>Editar Etapas do Cliente</title>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
@@ -37,11 +25,7 @@ $result = mysqli_query($connect, $query);
    <br />  
    <br />  
             <div class="table-responsive">  
-<<<<<<< HEAD
     <h3 align="center">Editar Etapas Cliente</h3><br />  
-=======
-    <h3 align="center">Editar Etapas do Cliente</h3><br />  
->>>>>>> origin/master
     <table id="editable_table" class="table table-bordered table-striped">
      <thead>
       <tr>
@@ -65,27 +49,17 @@ $result = mysqli_query($connect, $query);
      ?>
      </tbody>
     </table>
-<<<<<<< HEAD
    </div>
    <div class="form-group col-md-12">
-=======
-   </div>  
-  </div>  
-
-  <div class="form-group col-md-12">
->>>>>>> origin/master
       <a href="edit.php" class="btn btn-default">Voltar</a>
       <a href="index.php" class="btn btn-default">Cancelar</a>
       <a href="editEtapaResp.php?id=<?php echo $residencia['id']; ?>" class="btn btn-info"> Etapas  Responsável <i class="fa fa-pencil"></i></a>
     </div>
   </div>
  </body>  
-<<<<<<< HEAD
 </html>    
   </div>  
  </body>  
-=======
->>>>>>> origin/master
 </html>  
 <script>  
 $(document).ready(function(){  
@@ -101,18 +75,9 @@ $(document).ready(function(){
        if(data.action == 'delete')
        {
         $('#'+data.id).remove();
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
        }
       }
      });
  
 });  
-<<<<<<< HEAD
  </script>
-=======
- </script>
- <?php include(FOOTER_TEMPLATE); ?>
->>>>>>> origin/master
