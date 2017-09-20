@@ -2,6 +2,19 @@
 	require_once('functions.php'); 
 	view($_GET['id']);
 ?>
+<?php
+  $hostname = "localhost";
+  $username = "root";
+  $password = "";
+  $databaseName = "tohomecrud";
+
+  $connect = mysqli_connect($hostname, $username, $password, $databaseName);
+  $query =  "SELECT name,id FROM cliente where id = ".$residencia['idcliente'];
+  $query1 = "SELECT name,id FROM resp where id = ".$residencia['idresp'];
+  $result1 = mysqli_query($connect,$query);
+  $result2 = mysqli_query($connect,$query1);
+
+  ?>
 
 <?php include(HEADER_TEMPLATE); ?>
 
@@ -43,10 +56,14 @@
 	<dd><?php echo $residencia['enddate']; ?></dd>
 
 	<dt>Cliente:</dt>
-	<dd><?php echo $residencia['idcliente']; ?></dd>
+	<dd><?php while($row1 = mysqli_fetch_array($result1)):;?>
+  			<?php echo $row1['name'];?>
+ 			<?php endwhile;?></dd>
 
 	<dt>Responsável:</dt>
-	<dd><?php echo $residencia['idresp']; ?></dd>
+	<dd><?php while($row2 = mysqli_fetch_array($result2)):;?>
+  			<?php echo $row2['name'];?>
+ 			<?php endwhile;?></dd>
 </dl>
  <dt>Etapas Cliente:</dt>
 <dd> <?php

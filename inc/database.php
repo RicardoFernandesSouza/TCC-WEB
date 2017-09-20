@@ -122,6 +122,8 @@ function update($table = null, $id = 0, $data = null) {
 
 
 
+
+
 /**
  *  Remove uma linha de uma tabela pelo ID do registro
  */

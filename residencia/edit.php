@@ -64,67 +64,76 @@
       <input type="text" class="form-control" name="residencia['enddate']" value="<?php echo $residencia['enddate']; ?>">
     </div>
 
-    <div class="form-group col-md-3">
-      <label for="campo2">Cliente</label>
-      <input type="text" class="form-control" name="residencia['idcliente']" value="<?php echo $residencia['idcliente']; ?>">
-    </div>
+<?php
+  $hostname = "localhost";
+  $username = "root";
+  $password = "";
+  $databaseName = "tohomecrud";
+
+  $connect = mysqli_connect($hostname, $username, $password, $databaseName);
+  $query =  "SELECT name,id FROM cliente";
+  $result1 = mysqli_query($connect,$query);
+  ?>
 
     <div class="form-group col-md-3">
-      <label for="campo2">Responsável</label>
-      <input type="text" class="form-control" name="residencia['idresp']" value="<?php echo $residencia['idresp']; ?>">
+      <label for="campo9">Cliente</label>
+      <html>
+    <head>
+      <meta charset="UFT-8">
+      <meta name="viewport" content="width=device-width, initial-scale=5.0">
+      </head>
+      <body>
+      <select name="residencia['idcliente']">
+        <?php while($row1 = mysqli_fetch_array($result1)):;?>
+          <option value="<?php echo $row1['id'];?>"><?php echo $row1['name'];?></option>
+        <?php endwhile;?>
+      </select>
+      </body>
+  </html>
     </div>
 
+  <?php
+  $hostname = "localhost";
+  $username = "root";
+  $password = "";
+  $databaseName = "tohomecrud";
+
+  $connect1 = mysqli_connect($hostname, $username, $password, $databaseName);
+  $query1 =  "SELECT name,id FROM resp";
+  $result2 = mysqli_query($connect1,$query1);
+  ?>
+
+    <div class="form-group col-md-3">
+      <label for="campo10">Responsável</label>
+ <html>
+    <head>
+      <meta charset="UFT-8">
+      <meta name="viewport" content="width=device-width, initial-scale=5.0">
+      </head>
+      <body>
+      <select name="residencia['idresp']">
+        <?php while($row2 = mysqli_fetch_array($result2)):;?>
+          <option value="<?php echo $row2['id'];?>"><?php echo $row2['name'];?></option>
+        <?php endwhile;?>
+      </select>
+      </body>
+  </html>    </div>
+        </div>
+<BR><BR>
+
+   <div class="form-group col-md-12">
+      <a href="editEtapaCliente.php?id=<?php echo $residencia['id']; ?>" class="btn btn-info"> Etapas  Cliente <i class="fa fa-pencil"></i></a>
+      <a href="editEtapaResp.php?id=<?php echo $residencia['id']; ?>" class="btn btn-info"> Etapas  Responsável <i class="fa fa-pencil"></i></a>
+    </div>
   </div>
-
-<div class="col-md-12">
-  <dt>Etapas Cliente:</dt>
-<dd> <?php
-      $conn =   mysqli_connect("localhost", "root", "", "tohomecrud");  
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-$id_resi = $_GET['id'];
-$sql = "SELECT name, details FROM tbl_name where id_residencia like '".mysqli_real_escape_string($conn, $_GET["id"])."'";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-          //  echo "" . $row["name"]. " " . $row["details"]. "<br>"; 
-           ?> 
-
-<div class="table-responsive">  
-      <table class="table table-bordered" id="dynamic_field">  
-      <tr>  
-
-    <td><input type="text" name="tbl_name['name']" value="<?php echo $row['name']; ?>" class="form-control name_list" /></td> 
-    <td><input type="text" name="tbl_name['details']" value="<?php echo $row['details']; ?>" class="form-control name_list" /></td> 
-
-                                        
-    </tr>  
-        </table> 
-
-    <?php
-            
-
-    }
-} else {
-    echo "0 results";
-}
-//$conn->close();
-
- ?> </dd>
-
- </div>
-
   <div id="actions" class="row">
     <div class="col-md-12">
       <button type="submit" class="btn btn-primary">Salvar</button>
       <a href="index.php" class="btn btn-default">Cancelar</a>
     </div>
   </div>
+<BR><BR>
+   
 </form>
 
 <?php include(FOOTER_TEMPLATE); ?>
-

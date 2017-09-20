@@ -1,4 +1,4 @@
-\\\\<?php 
+<?php 
   require_once('functions.php'); 
   add();
 ?>
@@ -63,15 +63,60 @@
 <br><br>
 <br>
 
+<?php
+  $hostname = "localhost";
+  $username = "root";
+  $password = "";
+  $databaseName = "tohomecrud";
+
+  $connect = mysqli_connect($hostname, $username, $password, $databaseName);
+  $query =  "SELECT name,id FROM cliente";
+  $result1 = mysqli_query($connect,$query);
+  ?>
+
     <div class="form-group col-md-3">
       <label for="campo9">Cliente</label>
-      <input type="text" class="form-control" name="residencia['idcliente']">
+      <html>
+    <head>
+      <meta charset="UFT-8">
+      <meta name="viewport" content="width=device-width, initial-scale=5.0">
+      </head>
+      <body>
+      <select name="residencia['idcliente']">
+        <?php while($row1 = mysqli_fetch_array($result1)):;?>
+          <option value="<?php echo $row1['id'];?>"><?php echo $row1['name'];?></option>
+        <?php endwhile;?>
+      </select>
+      </body>
+  </html>
     </div>
+
+  <?php
+  $hostname = "localhost";
+  $username = "root";
+  $password = "";
+  $databaseName = "tohomecrud";
+
+  $connect1 = mysqli_connect($hostname, $username, $password, $databaseName);
+  $query1 =  "SELECT name,id FROM resp";
+  $result2 = mysqli_query($connect1,$query1);
+  ?>
 
     <div class="form-group col-md-3">
       <label for="campo10">Responsável</label>
-      <input type="text" class="form-control" name="residencia['idresp']">
-    </div>
+ <html>
+    <head>
+      <meta charset="UFT-8">
+      <meta name="viewport" content="width=device-width, initial-scale=5.0">
+      </head>
+      <body>
+      <select name="residencia['idresp']">
+        <?php while($row2 = mysqli_fetch_array($result2)):;?>
+          <option value="<?php echo $row2['id'];?>"><?php echo $row2['name'];?></option>
+        <?php endwhile;?>
+      </select>
+      </body>
+  </html>    </div>
         </div>
   <div id="actions" class="row">
     <div class="col-md-12">
@@ -80,5 +125,9 @@
     </div>
   </div>
 </form>
+
+
+
+  
 
 <?php include(FOOTER_TEMPLATE); ?>

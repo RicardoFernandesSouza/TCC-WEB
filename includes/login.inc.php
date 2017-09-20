@@ -3,12 +3,12 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 <?php $db = open_database(); 
-	$conn = mysqli_connect("localhost", "root", "", "tohomeweb");
+	$conn = mysqli_connect("localhost", "root", "", "tohomecrud");
 
 $uid = $_POST['uid'];
 $pwd = $_POST['pwd'];
 
-$sql = "SELECT * FROM useradm WHERE uid= '$uid' AND pwd= '$pwd' ";
+$sql = "SELECT * FROM useradmr WHERE uid= '$uid' AND pwd= '$pwd' ";
 		$result = mysqli_query($conn, $sql);
 
 		if(!$row = $result->fetch_assoc()){

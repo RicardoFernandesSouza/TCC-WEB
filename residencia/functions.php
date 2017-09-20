@@ -3,12 +3,16 @@ require_once('../config.php');
 require_once(DBAPI);
 $residencias = null;
 $residencia= null;
+$clientes = null;
+$cliente= null;
 /**
  *  Listagem de residencias
  */
 function index() {
 	global $residencias;
 	$residencias = find_all('residencia');
+  global $clientes;
+  $clientes = find_all('cliente');
 }
 
 /**
@@ -57,7 +61,6 @@ function edit() {
       $residencia = $_POST['residencia'];
       $residencia['modified'] = $now->format("Y-m-d H:i:s");
       update('residencia', $id, $residencia);
-      update('tbl_name', $id, $residencia);
       header('location: index.php');
     } else {
       global $residencia;
@@ -67,6 +70,7 @@ function edit() {
     header('location: index.php');
   }
 }
+
 
 /**
  *  Visualização de um residencia

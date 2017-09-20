@@ -69,3 +69,5 @@
       });  
  });  
  </script>
+
+<?php include(FOOTER_TEMPLATE); ?>
