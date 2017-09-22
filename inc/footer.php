@@ -1,5 +1,9 @@
 </main> <!-- /container -->
-
+	
+	<style>
+	<?php include 'footer.css'; ?>
+	</style>
+	
 	<hr>
 	<footer class="container">
 		<p>&copy;2017 - To Home</p>
