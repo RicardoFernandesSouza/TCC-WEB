@@ -16,8 +16,21 @@
 	<dt>Nome / Razão Social:</dt>
 	<dd><?php echo $cliente['name']; ?></dd>
 
+<?php
+//FORMATAR VISUALIZAÇÃO DO CPF
+/*
+	$nbr_cpf = $cliente['cpf_cnpj'];
+
+	$parte_um     = substr($nbr_cpf, 0, 3);
+	$parte_dois   = substr($nbr_cpf, 3, 3);
+	$parte_tres   = substr($nbr_cpf, 6, 3);
+	$parte_quatro = substr($nbr_cpf, 9, 2);
+
+	$monta_cpf = "$parte_um.$parte_dois.$parte_tres-$parte_quatro";
+
+*/?>
 	<dt>CPF / CNPJ:</dt>
-	<dd><?php echo $cliente['cpf_cnpj']; ?></dd>
+	<dd><?php echo $cliente['cpf_cnpj'];; ?></dd>
 
 </dl>
 

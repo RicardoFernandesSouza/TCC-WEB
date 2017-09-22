@@ -5,7 +5,18 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-
+<script>
+function formatar(mascara, documento){
+  var i = documento.value.length;
+  var saida = mascara.substring(0,1);
+  var texto = mascara.substring(i)
+  
+  if (texto.substring(0,1) != saida){
+            documento.value += texto.substring(0,1);
+  }
+  
+}
+</script>
 
 <h2>Novo Cliente</h2>
 
@@ -16,35 +27,35 @@
   <div class="row">
     <div class="form-group col-md-7">
       <label for="name">Nome / Razão Social</label>
-      <input type="text" class="form-control" name="cliente['name']">
+      <input type="text" class="form-control" name="cliente['name']" required>
     </div>
 
     <div class="form-group col-md-3">
       <label for="campo2">CNPJ / CPF</label>
-      <input type="text" class="form-control" name="cliente['cpf_cnpj']">
+      <input type="text" class="form-control" name="cliente['cpf_cnpj']" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)" required>
     </div>
 
 
   
     <div class="form-group col-md-2">
       <label for="campo3">Celular</label>
-      <input type="text" class="form-control" name="cliente['mobile']">
+      <input type="text" class="form-control" name="cliente['mobile']" maxlength="13" OnKeyPress="formatar('## #####-###', this)" required>
     </div>
     
   
     <div class="form-group col-md-7">
       <label for="campo3">E-mail</label>
-      <input type="text" class="form-control" name="cliente['email']">
+      <input type="text" class="form-control" name="cliente['email']" required>
     </div>
 
     <div class="form-group col-md-3">
       <label for="campo2">Nome Usuário</label>
-      <input type="text" class="form-control" name="cliente['username']">
+      <input type="text" class="form-control" name="cliente['username']" required>
     </div>
 
     <div class="form-group col-md-2">
       <label for="campo3">Senha</label>
-      <input type="text" class="form-control" name="cliente['password']">
+      <input type="password" class="form-control" name="cliente['password']" required>
     </div>
     
   
