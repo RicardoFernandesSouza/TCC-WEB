@@ -6,7 +6,7 @@
 	
 	<hr>
 	<footer class="container">
-		<p>&copy;2017 - To Home</p>
+		<p>&copy;2017 - To Home GITHUB</p>
 	</footer>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
