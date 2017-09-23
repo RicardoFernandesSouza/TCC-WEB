@@ -13,22 +13,22 @@
   <div class="row">
     <div class="form-group col-md-3">
       <label for="campo1">Rua</label>
-      <input type="text" class="form-control" name="residencia['address']">
+      <input type="text" class="form-control" name="residencia['address']" required>
     </div>
 
     <div class="form-group col-md-3">
       <label for="campo2">Bairro</label>
-      <input type="text" class="form-control" name="residencia['hood']">
+      <input type="text" class="form-control" name="residencia['hood']" required>
     </div>
     
     <div class="form-group col-md-3">
       <label for="campo3">CEP</label>
-      <input type="text" class="form-control" name="residencia['zip_code']">
+      <input type="text" class="form-control" name="residencia['zip_code']" required>
     </div>
   
     <div class="form-group col-md-3">
       <label for="campo4">Município</label>
-      <input type="text" class="form-control" name="residencia['city']">
+      <input type="text" class="form-control" name="residencia['city']" required>
     </div>
 
     <hr />
@@ -37,12 +37,12 @@
     <div class="row">
     <div class="form-group col-md-2">
       <label for="campo5">Inscrição Estadual</label>
-      <input type="text" class="form-control" name="residencia['ie']">
+      <input type="text" class="form-control" name="residencia['ie']" required>
     </div>
 
         <div class="form-group col-md-1">
       <label for="campo6">UF</label>
-      <input type="text" class="form-control" name="residencia['state']">
+      <input type="text" class="form-control" name="residencia['state']" required>
     </div>
     </div>
     
@@ -51,13 +51,13 @@
   <hr />
     <div class="form-group col-md-3">
       <label for="campo7">Data Início</label>
-      <input type="date" class="form-control" name="residencia['begindate']">
+      <input type="date" class="form-control" name="residencia['begindate']" required>
     </div>
   </div>
 
     <div class="form-group col-md-3">
       <label for="campo8">Data Fim</label>
-      <input type="date" class="form-control" name="residencia['enddate']">
+      <input type="date" class="form-control" name="residencia['enddate']" required>
     </div>
   <hr />
 <br><br>
