@@ -5,6 +5,19 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
+<script>
+function formatar(mascara, documento){
+  var i = documento.value.length;
+  var saida = mascara.substring(0,1);
+  var texto = mascara.substring(i)
+  
+  if (texto.substring(0,1) != saida){
+            documento.value += texto.substring(0,1);
+  }
+  
+}
+</script>
+
 <h2>Nova Residência</h2>
 
 <form action="add.php" method="post">
@@ -13,7 +26,7 @@
   <div class="row">
     <div class="form-group col-md-3">
       <label for="campo1">Rua</label>
-      <input type="text" class="form-control" name="residencia['address']" required>
+      <input type="text" class="form-control" name="residencia['address']" required >
     </div>
 
     <div class="form-group col-md-3">
@@ -23,7 +36,7 @@
     
     <div class="form-group col-md-3">
       <label for="campo3">CEP</label>
-      <input type="text" class="form-control" name="residencia['zip_code']" required>
+      <input type="text" class="form-control" name="residencia['zip_code']" maxlength="9" OnKeyPress="formatar('#####-###', this)" required>
     </div>
   
     <div class="form-group col-md-3">
