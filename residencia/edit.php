@@ -3,19 +3,6 @@
   edit();
 ?>
 
-<script>
-function formatar(mascara, documento){
-  var i = documento.value.length;
-  var saida = mascara.substring(0,1);
-  var texto = mascara.substring(i)
-  
-  if (texto.substring(0,1) != saida){
-            documento.value += texto.substring(0,1);
-  }
-  
-}
-</script>
-
 <?php include(HEADER_TEMPLATE); ?>
 
 <h2>Atualizar Residência</h2>
@@ -36,7 +23,7 @@ function formatar(mascara, documento){
 
     <div class="form-group col-md-2">
       <label for="campo3">CEP</label>
-      <input type="text" class="form-control" name="residencia['zip_code']" maxlength="9" OnKeyPress="formatar('#####-###', this)" value="<?php echo $residencia['zip_code']; ?>">
+      <input type="text" class="form-control" name="residencia['zip_code']" value="<?php echo $residencia['zip_code']; ?>">
     </div>
 
     <div class="form-group col-md-2">
