@@ -17,7 +17,7 @@
                 <br />  
                 <br />  
                 <h2 align="center">Etapas do Responsável</h2>  
-                <h2>residencia <?php echo $residencia['id']; ?></h2>
+                <h2>Residencia <br />ID <?php echo $residencia['id']; ?></h2>
 
                 <div class="form-group">  
                      <form name="add_name" id="add_name">  
@@ -26,7 +26,7 @@
                                     <tr>  
                                          <td><input type="text" name="name[]" placeholder="Número Etapa" class="form-control name_list" /></td> 
                                          <td><input type="text" name="details[]" placeholder="Descrição" class="form-control details_list" /></td> 
-                                         <td><input type="text" name="id_residencia[]" placeholder="<?php echo $residencia['id'];?>" class="form-control idresi_list"  value="<?php echo $residencia['id'];?>" /></td> 
+                                         <td><input type="hidden" name="id_residencia[]" placeholder="<?php echo $residencia['id'];?>" class="form-control idresi_list"  value="<?php echo $residencia['id'];?>" /></td> 
                                          
                                          <td><button type="button" name="add" id="add" class="btn btn-success">Add More</button></td>  
                                     </tr>  

@@ -18,7 +18,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>residencia <?php echo $residencia['id']; ?></h2>
+<h2>Residencia <?php echo $residencia['id']; ?></h2>
 <hr>
 
 <?php if (!empty($_SESSION['message'])) : ?>
@@ -125,4 +125,3 @@ $conn->close();
 	</div>
 </div>
 
-<?php include(FOOTER_TEMPLATE); ?>
