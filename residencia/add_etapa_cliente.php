@@ -49,7 +49,7 @@
       var i=1;  
       $('#add').click(function(){  
            i++;  
-           $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="name[]" placeholder="Número Etapa" class="form-control name_list" /></td>  <td><input type="text" name="details[]" placeholder="Descrição" class="form-control details_list" /></td>   <td><input type="text" name="id_residencia[]" placeholder="<?php echo $residencia['id'];?>" class="form-control idresi_list"  value="<?php echo $residencia['id'];?>" /></td>  <td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');  
+           $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="name[]" placeholder="Número Etapa" class="form-control name_list" /></td>  <td><input type="text" name="details[]" placeholder="Descrição" class="form-control details_list" /></td>   <td><input type="hidden" name="id_residencia[]" placeholder="<?php echo $residencia['id'];?>" class="form-control idresi_list"  value="<?php echo $residencia['id'];?>" /></td>  <td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');  
       });  
       $(document).on('click', '.btn_remove', function(){  
            var button_id = $(this).attr("id");   
@@ -70,4 +70,3 @@
  });  
  </script>
 
-<?php include(FOOTER_TEMPLATE); ?>

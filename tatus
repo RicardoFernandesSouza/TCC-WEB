@@ -1,0 +1,164 @@
+[33mcommit 500648bdc22225c4d9ec4baa4d59c48c1f9191dd[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Mon Dec 4 11:12:22 2017 -0200
+
+    Mensagem de exclusão de cliente e responsável
+
+[33mcommit f905c73414e419912d72b8b9d9f00e6190ffc72b[m
+Author: Adriano Borella <adrianoborella@yahoo.com.br>
+Date:   Mon Dec 4 11:03:46 2017 -0200
+
+    Adicionado logo na tela de login
+
+[33mcommit ac87e1187a9c57d842d989f0de169b71feb4bbf3[m
+Author: Adriano Borella <adrianoborella@yahoo.com.br>
+Date:   Mon Nov 6 19:31:48 2017 -0200
+
+    Ajuste nas máscaras dos campos do Cliente Responsavel e Residencia
+
+[33mcommit e51bb6bf84f716e64c581c54bf62c63a29d87b23[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Mon Nov 6 15:58:44 2017 -0200
+
+    Ajustes no Header, retirada de footer nas páginas de edição de etapas
+
+[33mcommit 606232fe5e3dccee35b1d35ec54a582cebdeafdd[m
+Author: Adriano Borella <adrianoborella@yahoo.com.br>
+Date:   Mon Oct 9 20:06:21 2017 -0300
+
+    Removido o Jquery do footer para exibir icones edicao das etapas
+
+[33mcommit ce812a2057cf258b091a07b9e7721271a9698de6[m
+Author: Adriano Borella <adrianoborella@yahoo.com.br>
+Date:   Mon Oct 9 18:51:00 2017 -0300
+
+    Footer acompanha o scroll da pagina
+
+[33mcommit 8773cd77b681daaad198817f0bd6520b68b84d27[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Mon Sep 25 18:43:21 2017 -0300
+
+    Mensagem de tratamento para exclusão de Clientes e Responsáveis
+
+[33mcommit 97dd43dd98d87cd4981e52a04f8d992e6200405e[m
+Author: Adriano Borella <adrianoborella@yahoo.com.br>
+Date:   Mon Sep 25 16:57:19 2017 -0300
+
+    Formatacao do ceb no cadastro e edicao de Residencia
+
+[33mcommit 74f4b33ce3cc3422be6336caa11a1e5109bdd26f[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Sat Sep 23 19:12:29 2017 -0300
+
+    Ajustes no footer de GITHUB para 2017
+
+[33mcommit a120cda4a5b3f278dcd943c1e4fd5ed5e38d2785[m
+Author: Adriano Borella <adrianoborella@yahoo.com.br>
+Date:   Sat Sep 23 19:08:21 2017 -0300
+
+    aeHOOO
+
+[33mcommit 6ccae87ef882c774a5d8b0c74607a135e1bc6d70[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Sat Sep 23 16:59:35 2017 -0300
+
+    Nova residência com trataiva de campos obrigatórios
+
+[33mcommit 3c0777cdfb75df518917b9db86eb5684b4bbb96a[m
+Author: Adriano Borella <adrianoborella@yahoo.com.br>
+Date:   Fri Sep 22 19:10:05 2017 -0300
+
+    que tampa
+
+[33mcommit e7f5e55bf9a18c9e92b3c57b06c998373b5be6bd[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Fri Sep 22 18:58:54 2017 -0300
+
+    tampa
+
+[33mcommit fa525fcd23962fb6751b7d7a9d395d655c45b478[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Wed Sep 20 18:44:26 2017 -0300
+
+    Ajustes no Projeto
+
+[33mcommit 9c3e5510d308da33f08a1e145d6d870cd8b01af6[m
+Merge: 0d3cffb fb1046c
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Wed Sep 20 18:41:51 2017 -0300
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #	residencia/edit.php
+    #	residencia/editEtapaCliente.php
+    #	residencia/editEtapaResp.php
+    #	residencia/edit_etapa_cliente.php
+    #	tohomecrud.sql
+
+[33mcommit 0d3cffb85e4744f6e0a85c23fc63068ce71320ee[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Wed Sep 20 18:33:39 2017 -0300
+
+    Ajustes na Classe de Residência-ComboBox,Index,View,Edição e Adição
+
+[33mcommit fb1046c82e5f7e8ada58fe53aaaee4eb2ca9e75c[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Wed Aug 16 20:49:37 2017 -0300
+
+    Documento ReadME
+
+[33mcommit 7eb95cfb15a3a06513bb9345cbe1f68f49204a25[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Wed Aug 16 20:36:25 2017 -0300
+
+    Banco atualizado
+
+[33mcommit 8f2e3d209ae4d993ad768d7ee76fe2b05e7ccea9[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Wed Aug 16 20:34:29 2017 -0300
+
+    Edição e Exclusão de Etapas
+
+[33mcommit 04babb5a1aa5c5b086a7bb9764c06a283bdf6933[m
+Merge: 6ff2a71 01d1257
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Tue Aug 8 19:36:58 2017 -0300
+
+    Merge branch 'Ricardo'
+
+[33mcommit 01d125728d58ab12e104175be5ec839ee56b897b[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Tue Aug 8 19:34:32 2017 -0300
+
+    Banco de Dados
+
+[33mcommit 6ff2a71f3d14a088fa0a7fb928144d1c4fd6cd33[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Tue Aug 8 19:28:37 2017 -0300
+
+    Banco de dados exportado
+
+[33mcommit 457352b84c98e14cb98682000157fee064201940[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Tue Aug 8 18:43:04 2017 -0300
+
+    Update de etapas
+
+[33mcommit 9e3d00e71b24fae796d2a536b68c1fc0593682da[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Sun Jun 4 17:06:45 2017 -0300
+
+    Update para os campos conforme o MER
+
+[33mcommit b1bb6684ade378827357853e370beeaaeaf07469[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Mon May 29 20:00:51 2017 -0300
+
+    Primeiro Commit Web
+
+[33mcommit 2c3fa32dd7f5f2386d8b64126ab41268a28d874e[m
+Author: RicardoFernandesSouza <ricardo_fernandes.souza@hotmail.com>
+Date:   Mon May 29 19:59:01 2017 -0300
+
+    first commit
