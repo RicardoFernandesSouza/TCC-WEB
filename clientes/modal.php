@@ -7,7 +7,7 @@
         <h4 class="modal-title" id="modalLabel">Excluir Item</h4>
       </div>
       <div class="modal-body">
-        Deseja realmente excluir este item?
+        Deseja realmente excluir este Cliente? Certifique-se que não há residências vinculadas...
       </div>
       <div class="modal-footer">
         <a id="confirm" class="btn btn-primary" href="#">Sim</a>
